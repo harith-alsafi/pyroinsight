@@ -1,11 +1,11 @@
 import React from "react";
-import "./Updates.css";
-import { UpdatesData } from "../../Data/Data";
+import "./Notifications.css";
+import { NotificationsData } from "../../Data/Data";
 
-const Updates = () => {
+const Notifications = () => {
   return (
-    <div className="Updates">
-      {UpdatesData.map((update) => {
+    <div className="Notifications">
+      {NotificationsData.map((update) => {
         return (
           <div className="update">
             <img src={update.img} alt="profile" />
@@ -23,4 +23,4 @@ const Updates = () => {
   );
 };
 
-export default Updates;
+export default Notifications;

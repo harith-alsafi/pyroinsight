@@ -1,16 +1,18 @@
 // Sidebar imports
 import {
-  UilEstate,
-  UilClipboardAlt,
-  UilUsersAlt,
-  UilPackage,
-  UilChart,
-  UilSignOutAlt,
+  UilServerAlt,
+  UilAdjust,
+  UilChartLine,
+  UilBell,
+  UilWrench,
+  UilCalendarAlt,
+  UilUser,
+  UilSetting,
+  UilComment,
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // Recent Card Imports
 import img1 from "../imgs/img1.png";
@@ -20,84 +22,103 @@ import img3 from "../imgs/img3.png";
 // Sidebar Data
 export const SidebarData = [
   {
-    icon: UilEstate,
-    heading: "Dashboard",
+    icon: UilServerAlt,
+    heading: "Panels",
   },
   {
-    icon: UilClipboardAlt,
-    heading: "Orders",
+    icon: UilAdjust,
+    heading: "Devices",
   },
   {
-    icon: UilUsersAlt,
-    heading: "Customers",
-  },
-  {
-    icon: UilPackage,
-    heading: 'Products'
-  },
-  {
-    icon: UilChart,
+    icon: UilChartLine,
     heading: 'Analytics'
   },
+  {
+    icon: UilBell,
+    heading: 'Notifications'
+  },
+  {
+    icon: UilWrench,
+    heading: 'Repairs'
+  },
+  {
+    icon: UilCalendarAlt,
+    heading: 'Calendar'
+  },
+  {
+    icon: UilUser,
+    heading: 'Account'
+  },
+  {
+    icon: UilSetting,
+    heading: 'Settings'
+  },
+
 ];
 
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Sales",
+    title: "Panel 1",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
-    barValue: 70,
-    value: "25,970",
-    png: UilUsdSquare,
+    barValue: 94,
+    status: "EXCELLENT",
     series: [
       {
         name: "Sales",
         data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
+    panel: "Pro215D",
+    zones: 2,
+    devices: 60,
   },
   {
-    title: "Revenue",
+    title: "Panel 2",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
       boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
-    barValue: 80,
-    value: "14,270",
-    png: UilMoneyWithdrawal,
+    barValue: 75,
+    status: "GOOD",
     series: [
       {
-        name: "Revenue",
+        name: "Panel HP",
         data: [10, 100, 50, 70, 80, 30, 40],
       },
     ],
+    panel: "MX 4000",
+    zones: 1,
+    devices: 125,
   },
   {
-    title: "Expenses",
+    title: "Panel 3",
     color: {
       backGround:
         "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
-    barValue: 60,
-    value: "4,270",
-    png: UilClipboardAlt,
+    barValue: 40,
+    status: "RISKY",
     series: [
       {
         name: "Expenses",
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
+    panel: "Pro32xD",
+    zones: 4,
+    devices: 255,
   },
 ];
 
 // Recent Update Card Data
-export const UpdatesData = [
+export const NotificationsData = [
   {
-    img: img1,
+    img: UilComment,
     name: "Andrew Thomas",
     noti: "has ordered Apple smart watch 2500mh battery.",
     time: "25 seconds ago",

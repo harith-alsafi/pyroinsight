@@ -1,0 +1,22 @@
+.dropup:hover #id_dropup {
+  background-color: var(--light-green);
+}
+
+.id_dropup {
+  background-color: var(--activeItem);
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0.7rem;
+  z-index: 1;
+}
+
+.id_dropup option {
+  display: block;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+}

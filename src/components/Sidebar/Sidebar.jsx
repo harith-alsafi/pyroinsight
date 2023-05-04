@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import Logo from "../imgs/logo.png";
-import { UilSignOutAlt } from "@iconscout/react-unicons";
-import { SidebarData } from "../Data/Data";
+import Logo from "../../imgs/logo 2.png";
+import Site from "../Site/Site";
+import { UilSitemap  } from "@iconscout/react-unicons";
+import { SidebarData } from "../../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 
@@ -13,7 +14,7 @@ const Sidebar = () => {
 
   const sidebarVariants = {
     true: {
-      left : '0'
+      left : '0%'
     },
     false:{
       left : '-60%'
@@ -33,7 +34,7 @@ const Sidebar = () => {
       <div className="logo">
         <img src={Logo} alt="logo" />
         <span>
-          Sh<span>o</span>ps
+          PyroInsight
         </span>
       </div>
 
@@ -50,9 +51,8 @@ const Sidebar = () => {
             </div>
           );
         })}
-        {/* signoutIcon */}
         <div className="menuItem">
-          <UilSignOutAlt />
+          <Site/>
         </div>
       </div>
     </motion.div>
