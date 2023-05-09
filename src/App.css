@@ -23,7 +23,6 @@
     #02AEDF 50%,
     #5FDA2C 90%
   );
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,10 +31,12 @@
 
 .AppGlass {
   display: grid;
-  height: 97%;
+  height: 80%;
   width: 97%;
   background: var(--glass);
   border-radius: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; 
   gap: 16px;
   grid-template-columns: 12rem auto 20rem;
   overflow: hidden;

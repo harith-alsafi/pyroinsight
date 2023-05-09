@@ -51,7 +51,7 @@
 }
 
 .menu .menuItem:last-child {
-  bottom: -2rem;
+  bottom: 0rem;
 }
 
 .active {
@@ -65,6 +65,14 @@
   background: var(--light-green);
   margin-right: calc(1rem - 8px);
 }
+
+@media screen and (max-width: 1500px) {
+  .menuItem {
+    height: 2rem;
+  }
+
+}
+
 
 
 /* Tablets */

@@ -1,5 +1,7 @@
-.dropup:hover #id_dropup {
+.dropup:hover {
   background-color: var(--light-green);
+  border: none;
+  border-radius: 0.7rem;
 }
 
 .id_dropup {
@@ -16,7 +18,13 @@
   display: block;
   background-color: white;
   color: black;
+  bottom: -50px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
+  
+.id_dropup {
+  padding: 16px;
+  font-size: 14px;
+}
 }

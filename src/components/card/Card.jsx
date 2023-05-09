@@ -23,7 +23,6 @@ const Card = (props) => {
 
 // Compact Card
 function CompactCard({ param, setExpanded }) {
-  const Png = param.png;
   return (
     <motion.div
       className="CompactCard"
@@ -89,6 +88,15 @@ function ExpandedCard({ param, setExpanded }) {
         show: true,
       },
       xaxis: {
+        show: true,
+        title: {
+          text: "Time",
+          style: {
+            fontSize: "16px",
+            fontWeight: "400",
+            color: "#ffffff",
+          },
+        },
         type: "datetime",
         categories: [
           "2018-09-19T00:00:00.000Z",
@@ -99,6 +107,17 @@ function ExpandedCard({ param, setExpanded }) {
           "2018-09-19T05:30:00.000Z",
           "2018-09-19T06:30:00.000Z",
         ],
+      },
+      yaxis: {
+        show: true,
+        title: {
+          text: "Health",
+          style: {
+            fontSize: "16px",
+            fontWeight: "400",
+            color: "#ffffff",
+          },
+        },
       },
     },
   };
@@ -115,11 +134,10 @@ function ExpandedCard({ param, setExpanded }) {
       <div style={{ alignSelf: "flex-end", cursor: "pointer", color: "white" }}>
         <UilTimes onClick={setExpanded} />
       </div>
-        <span>{param.title}</span>
+      <span>{param.title}</span>
       <div className="chartContainer">
         <Chart options={data.options} series={param.series} type="area" />
       </div>
-      <span>Last 24 hours</span>
     </motion.div>
   );
 }
