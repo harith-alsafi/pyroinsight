@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../../imgs/logo 2.png";
 import Site from "../Site/Site";
-import { UilSitemap  } from "@iconscout/react-unicons";
 import { SidebarData } from "../../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -46,8 +46,12 @@ const Sidebar = () => {
               key={index}
               onClick={() => setSelected(index)}
             >
-              <item.icon />
-              <span>{item.heading}</span>
+              <Link 
+              style={{textDecoration: 'none', color: 'black', fontSize:'16px', display: "flex", alignItems:"center", gap:"5px"}} 
+              to={item.to}>
+                <item.icon/>
+                <span>{item.heading}</span>               
+              </Link> 
             </div>
           );
         })}

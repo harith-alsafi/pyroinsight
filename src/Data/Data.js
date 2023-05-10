@@ -17,36 +17,43 @@ export const SidebarData = [
   {
     icon: UilServerAlt,
     heading: "Panels",
+    to:"/"
   },
   {
     icon: UilAdjust,
     heading: "Devices",
+    to:"/devices"
   },
   {
     icon: UilChartLine,
-    heading: 'Analytics'
+    heading: 'Analytics',
+    to:"/analytics"
   },
   {
     icon: UilBell,
-    heading: 'Notifications'
+    heading: 'Notifications',
+    to:"/analytics"
   },
   {
     icon: UilWrench,
-    heading: 'Repairs'
+    heading: 'Repairs',
+    to:"/repairs"
   },
   {
     icon: UilCalendarAlt,
-    heading: 'Calendar'
+    heading: 'Calendar',
+    to:"calendar"
   },
   {
     icon: UilUser,
-    heading: 'Account'
+    heading: 'Account',
+    to:"/account"
   },
   {
     icon: UilSetting,
-    heading: 'Settings'
+    heading: 'Settings',
+    to:"/settings"
   },
-
 ];
 
 // Analytics Cards Data

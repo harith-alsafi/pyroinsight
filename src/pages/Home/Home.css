@@ -1,0 +1,19 @@
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .content{
+    grid-template-columns: 60% auto;
+    overflow-y: scroll;
+  } 
+} */

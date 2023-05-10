@@ -38,16 +38,16 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; 
   gap: 16px;
-  grid-template-columns: 12rem auto 20rem;
+  grid-template-columns: 12rem auto;
   overflow: hidden;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .AppGlass{
     grid-template-columns: 10% 50% auto;
     overflow-y: scroll;
   } 
-}
+} */
 
 @media screen and (max-width: 768px) {
   .AppGlass{
