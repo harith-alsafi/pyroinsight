@@ -12,12 +12,12 @@ import Card from "components/card/Card.js";
 import BarChart from "components/charts/BarChart";
 import React from "react";
 import {
-  barChartDataConsumption,
+  barChartDataConsumption2,
   barChartOptionsConsumption,
 } from "variables/charts";
 import { MdBarChart } from "react-icons/md";
 
-export default function WeeklyRevenue(props) {
+export default function WeeklyUpdate1(props) {
   const { ...rest } = props;
 
   // Chakra Color Mode
@@ -41,7 +41,7 @@ export default function WeeklyRevenue(props) {
           fontSize='xl'
           fontWeight='700'
           lineHeight='100%'>
-          Weekly Revenue
+          Panel 2 - Weekly Update (16)
         </Text>
         <Button
           align='center'
@@ -61,7 +61,7 @@ export default function WeeklyRevenue(props) {
 
       <Box h='240px' mt='auto'>
         <BarChart
-          chartData={barChartDataConsumption}
+          chartData={barChartDataConsumption2}
           chartOptions={barChartOptionsConsumption}
         />
       </Box>

@@ -105,18 +105,33 @@ export const barChartOptionsDailyTraffic = {
 
 // Consumption Users Reports
 
-export const barChartDataConsumption = [
+export const barChartDataConsumption1 = [
   {
-    name: "PRODUCT A",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Disabled",
+    data: [0, 0, 0, 0, 0, 0, 0],
   },
   {
-    name: "PRODUCT B",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Faulty",
+    data: [3, 3, 4, 4, 3, 3, 4],
   },
   {
-    name: "PRODUCT C",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "Healthy",
+    data: [57, 57, 56, 56, 57, 57, 56],
+  },
+];
+
+export const barChartDataConsumption2 = [
+  {
+    name: "Disabled",
+    data: [3, 5, 5, 5, 6, 7, 10],
+  },
+  {
+    name: "Faulty",
+    data: [64, 65, 65, 68, 68, 70, 72],
+  },
+  {
+    name: "Healthy",
+    data: [58, 55, 55, 52, 51, 48, 43],
   },
 ];
 
@@ -141,7 +156,7 @@ export const barChartOptionsConsumption = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["17", "18", "19", "20", "21", "22", "23", "24", "25"],
+    categories: ["17", "18", "19", "20", "21", "22", "23"],
     show: false,
     labels: {
       show: true,
@@ -196,7 +211,7 @@ export const barChartOptionsConsumption = {
   legend: {
     show: false,
   },
-  colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+  colors: ["#1536AA", "#04B3DA", "#71E20B"],
   dataLabels: {
     enabled: false,
   },
@@ -249,20 +264,23 @@ export const pieChartOptions = {
 
 export const pieChartData = [63, 25, 12];
 
-// Total Spent Default
+// Panel Data
 
-export const lineChartDataTotalSpent = [
+export const lineChartDataPanel1 = [
   {
-    name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
-  },
-  {
-    name: "Profit",
-    data: [30, 40, 24, 46, 20, 46],
+    name: "Health",
+    data: [50, 64, 48, 66, 70, 94],
   },
 ];
 
-export const lineChartOptionsTotalSpent = {
+export const lineChartDataPanel2 = [
+  {
+    name: "Health",
+    data: [70, 75, 70, 66, 51, 43],
+  },
+];
+
+export const lineChartOptionsPanel1 = {
   chart: {
     toolbar: {
       show: false,
@@ -273,14 +291,14 @@ export const lineChartOptionsTotalSpent = {
       left: 0,
       blur: 10,
       opacity: 0.1,
-      color: "#4318FF",
+      color: "#1536AA",
     },
   },
-  colors: ["#4318FF", "#39B8FF"],
+  colors: ["#04B3DA"],
   markers: {
     size: 0,
     colors: "white",
-    strokeColors: "#7551FF",
+    strokeColors: "#1536AA",
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -304,7 +322,7 @@ export const lineChartOptionsTotalSpent = {
   },
   xaxis: {
     type: "numeric",
-    categories: ["SEP", "OCT", "NOV", "DEC", "JAN", "FEB"],
+    categories: ["NOV", "DEC", "JAN", "FEB", "MAR", "APR"],
     labels: {
       style: {
         colors: "#A3AED0",
@@ -328,9 +346,9 @@ export const lineChartOptionsTotalSpent = {
   grid: {
     show: false,
     column: {
-      color: ["#7551FF", "#39B8FF"],
+      color: ["#04B3DA"],
       opacity: 0.5,
     },
   },
-  color: ["#7551FF", "#39B8FF"],
+  color: ["#04B3DA"],
 };
