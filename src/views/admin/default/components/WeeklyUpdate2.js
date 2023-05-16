@@ -15,7 +15,7 @@ import {
   barChartDataConsumption2,
   barChartOptionsConsumption,
 } from "variables/charts";
-import { MdBarChart } from "react-icons/md";
+import DateMenu from "components/menu/DateMenu";
 
 export default function WeeklyUpdate1(props) {
   const { ...rest } = props;
@@ -43,20 +43,20 @@ export default function WeeklyUpdate1(props) {
           lineHeight='100%'>
           Panel 2 - Weekly Update (16)
         </Text>
-        <Button
-          align='center'
-          justifyContent='center'
+        <DateMenu
+          ms="auto"
+          align="center"
+          justifyContent="center"
           bg={bgButton}
           _hover={bgHover}
           _focus={bgFocus}
           _active={bgFocus}
-          w='37px'
-          h='37px'
-          lineHeight='100%'
-          borderRadius='10px'
-          {...rest}>
-          <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
-        </Button>
+          w="37px"
+          h="37px"
+          lineHeight="100%"
+          borderRadius="10px"
+          {...rest}
+        ></DateMenu>
       </Flex>
 
       <Box h='240px' mt='auto'>

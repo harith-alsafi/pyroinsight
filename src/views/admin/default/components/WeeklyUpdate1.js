@@ -10,12 +10,12 @@ import {
 import Card from "components/card/Card.js";
 // Custom components
 import BarChart from "components/charts/BarChart";
+import DateMenu from "components/menu/DateMenu";
 import React from "react";
 import {
   barChartDataConsumption1,
   barChartOptionsConsumption,
 } from "variables/charts";
-import { MdBarChart } from "react-icons/md";
 
 export default function WeeklyUpdate1(props) {
   const { ...rest } = props;
@@ -33,33 +33,34 @@ export default function WeeklyUpdate1(props) {
     { bg: "whiteAlpha.100" }
   );
   return (
-    <Card align='center' direction='column' w='100%' {...rest}>
-      <Flex align='center' w='100%' px='15px' py='10px'>
+    <Card align="center" direction="column" w="100%" {...rest}>
+      <Flex align="center" w="100%" px="15px" py="10px">
         <Text
-          me='auto'
+          me="auto"
           color={textColor}
-          fontSize='xl'
-          fontWeight='700'
-          lineHeight='100%'>
+          fontSize="xl"
+          fontWeight="700"
+          lineHeight="100%"
+        >
           Panel 1 - Weekly Update (16)
         </Text>
-        <Button
-          align='center'
-          justifyContent='center'
+        <DateMenu
+          ms="auto"
+          align="center"
+          justifyContent="center"
           bg={bgButton}
           _hover={bgHover}
           _focus={bgFocus}
           _active={bgFocus}
-          w='37px'
-          h='37px'
-          lineHeight='100%'
-          borderRadius='10px'
-          {...rest}>
-          <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
-        </Button>
+          w="37px"
+          h="37px"
+          lineHeight="100%"
+          borderRadius="10px"
+          {...rest}
+        ></DateMenu>
       </Flex>
 
-      <Box h='240px' mt='auto'>
+      <Box h="240px" mt="auto">
         <BarChart
           chartData={barChartDataConsumption1}
           chartOptions={barChartOptionsConsumption}

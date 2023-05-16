@@ -96,10 +96,10 @@ export default function HeaderLinks(props) {
 					</Flex>
 					<Flex flexDirection="column">
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
-							<ItemContent info="Device near failure" aName="Alicia" />
+							<ItemContent info="General check" desc="Book for general service." time="3 days ago" />
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
-							<ItemContent info="Maintenance completed" aName="Josh Henry" />
+							<ItemContent info="Device near failure" desc="Device 2, Zone 1, Panel 3 needs to be replaced" time="2 weeks ago" />
 						</MenuItem>
 					</Flex>
 				</MenuList>
@@ -112,7 +112,7 @@ export default function HeaderLinks(props) {
 					<Avatar
 						_hover={{ cursor: 'pointer' }}
 						color="white"
-						name="Adela Parkson"
+						name="Kumar Acharjee"
 						bg="#11047A"
 						size="sm"
 						w="40px"

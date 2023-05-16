@@ -7,6 +7,109 @@ export const barChartDataDailyTraffic = [
   },
 ];
 
+export const barChartMontlyPanelPerformance = [
+  {
+    name: "Health",
+    data: [60, 70, 59, 66, 61, 69],
+  },
+];
+
+export const barChartOptionsMontlyPanelPerformance = {
+  chart: {
+    toolbar: {
+      show: false,
+    },
+  },
+  tooltip: {
+    style: {
+      fontSize: "12px",
+      fontFamily: undefined,
+    },
+    onDatasetHover: {
+      style: {
+        fontSize: "12px",
+        fontFamily: undefined,
+      },
+    },
+    theme: "dark",
+  },
+  xaxis: {
+    categories: ["NOV", "DEC", "JAN", "FEB", "MAR", "APR"],
+    show: false,
+    labels: {
+      show: true,
+      style: {
+        colors: "#A3AED0",
+        fontSize: "14px",
+        fontWeight: "500",
+      },
+    },
+    axisBorder: {
+      show: false,
+    },
+    axisTicks: {
+      show: false,
+    },
+  },
+  yaxis: {
+    show: false,
+    color: "black",
+    labels: {
+      show: true,
+      style: {
+        colors: "#CBD5E0",
+        fontSize: "14px",
+      },
+    },
+  },
+  grid: {
+    show: false,
+    strokeDashArray: 5,
+    yaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    xaxis: {
+      lines: {
+        show: false,
+      },
+    },
+  },
+  fill: {
+    type: "gradient",
+    gradient: {
+      type: "vertical",
+      shadeIntensity: 1,
+      opacityFrom: 0.7,
+      opacityTo: 0.9,
+      colorStops: [
+        [
+          {
+            offset: 0,
+            color: "#4318FF",
+            opacity: 1,
+          },
+          {
+            offset: 100,
+            color: "rgba(67, 24, 255, 1)",
+            opacity: 0.28,
+          },
+        ],
+      ],
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  plotOptions: {
+    bar: {
+      borderRadius: 10,
+      columnWidth: "40px",
+    },
+  },
+};
+
 export const barChartOptionsDailyTraffic = {
   chart: {
     toolbar: {
@@ -224,8 +327,8 @@ export const barChartOptionsConsumption = {
 };
 
 export const pieChartOptions = {
-  labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  labels: ["Healthy", "Faulty", "Disabled"],
+  colors: ["#71E20B", "#04B3DA", "#1536AA"],
   chart: {
     width: "50px",
   },
@@ -254,7 +357,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    colors: ["#71E20B", "#04B3DA", "#1536AA"],
   },
   tooltip: {
     enabled: true,
@@ -262,7 +365,7 @@ export const pieChartOptions = {
   },
 };
 
-export const pieChartData = [63, 25, 12];
+export const pieChartData = [54, 41, 5];
 
 // Panel Data
 

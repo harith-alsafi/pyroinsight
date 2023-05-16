@@ -15,6 +15,7 @@ import {
 // Assets
 import {
   MdDateRange,
+  MdBarChart,
 } from "react-icons/md";
 
 export default function Banner(props) {
@@ -63,7 +64,7 @@ export default function Banner(props) {
         onClick={onOpen1}
         borderRadius='10px'
         {...rest}>
-        <Icon as={MdDateRange} color={iconColor} w='24px' h='24px' />
+        <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
       </MenuButton>
       <MenuList
         w='150px'
@@ -91,7 +92,7 @@ export default function Banner(props) {
           <Flex align='center'>
             <Icon as={MdDateRange} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              2023
+              Daily
             </Text>
           </Flex>
         </MenuItem>
@@ -111,7 +112,7 @@ export default function Banner(props) {
           <Flex align='center'>
             <Icon as={MdDateRange} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              2022
+              Weekly
             </Text>
           </Flex>
         </MenuItem>
@@ -131,7 +132,7 @@ export default function Banner(props) {
           <Flex align='center'>
             <Icon as={MdDateRange} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              2021
+              Monthly
             </Text>
           </Flex>
         </MenuItem>
@@ -150,7 +151,7 @@ export default function Banner(props) {
           <Flex align='center'>
             <Icon as={MdDateRange} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              2020
+              Yearly
             </Text>
           </Flex>
         </MenuItem>

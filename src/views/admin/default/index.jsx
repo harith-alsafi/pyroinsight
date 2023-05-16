@@ -22,9 +22,11 @@ import {
   MdAddTask,
   MdOutlineHealing,
   MdBarChart,
-  MdFileCopy,
+  MdDataset,
   MdDoDisturbOn,
   MdDoDisturbOff,
+  MdHealthAndSafety,
+  MdOutlineHealthAndSafety,
 } from "react-icons/md";
 
 import Nft1 from "assets/img/nfts/Nft1.png";
@@ -35,12 +37,16 @@ import Nft5 from "assets/img/nfts/Nft5.png";
 import Nft6 from "assets/img/nfts/Nft6.png";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
+import Orders from "views/admin/default/components/Orders";
 import DailyTraffic from "views/admin/default/components/DailyTraffic";
+import AveragePanel from "views/admin/default/components/AveragePanel";
+import Checklist from "views/admin/default/components/Checklist";
 import PieCard from "views/admin/default/components/PieCard";
-import Tasks from "views/admin/default/components/Tasks";
+import PanelPieCard from "views/admin/default/components/PanelPieCard";
 import Panel1 from "views/admin/default/components/Panel1";
 import Panel2 from "views/admin/default/components/Panel2";
 import HistoryItem from "views/admin/marketplace/components/HistoryItem";
+import Notification from "views/admin/default/components/NotificationsCard";
 import WeeklyUpdate1 from "views/admin/default/components/WeeklyUpdate1";
 import WeeklyUpdate2 from "views/admin/default/components/WeeklyUpdate2";
 import NFT from "components/card/NFT";
@@ -59,134 +65,170 @@ export default function UserReports() {
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-      <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px'>
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px" mb="20px">
         <Panel1 />
-        <WeeklyUpdate1/>
+        <WeeklyUpdate1 />
         <Panel2 />
-        <WeeklyUpdate2/>
+        <WeeklyUpdate2 />
       </SimpleGrid>
       <SimpleGrid
-        columns={{ base: 1, md: 2, lg: 3, "2xl": 6 }}
-        gap='20px'
-        mb='20px'>
+        columns={{ base: 1, md: 2, lg: 3, "2xl": 4 }}
+        gap="20px"
+        mb="20px"
+      >
         <MiniStatistics
           startContent={
             <IconBox
-              w='56px'
-              h='56px'
+              w="56px"
+              h="56px"
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdDoDisturbOff} color={brandColor} />
+                <Icon
+                  w="32px"
+                  h="32px"
+                  as={MdDoDisturbOff}
+                  color={brandColor}
+                />
               }
             />
           }
-          name='Devices disabled this year'
-          value='10'
+          name="Devices disabled this year"
+          value="10"
         />
         <MiniStatistics
           startContent={
             <IconBox
-              w='56px'
-              h='56px'
+              w="56px"
+              h="56px"
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdDoDisturbOn} color={brandColor} />
+                <Icon w="32px" h="32px" as={MdDoDisturbOn} color={brandColor} />
               }
             />
           }
-          name='Devices faulty this year'
-          value='76'
+          name="Devices faulty this year"
+          value="76"
         />
         <MiniStatistics
           startContent={
             <IconBox
-              w='56px'
-              h='56px'
+              w="56px"
+              h="56px"
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdOutlineHealing} color={brandColor} />
+                <Icon
+                  w="32px"
+                  h="32px"
+                  as={MdOutlineHealing}
+                  color={brandColor}
+                />
               }
             />
           }
-          name='Devices replaced this year'
-          value='2'
+          name="Devices replaced this year"
+          value="3"
         />
- 
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w="56px"
+              h="56px"
+              bg={boxBg}
+              icon={
+                <Icon w="32px" h="32px" as={MdDataset} color={brandColor} />
+              }
+            />
+          }
+          name="Number of sites being used"
+          value="2"
+        />
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w="56px"
+              h="56px"
+              bg={boxBg}
+              icon={
+                <Icon
+                  w="32px"
+                  h="32px"
+                  as={MdHealthAndSafety}
+                  color={brandColor}
+                />
+              }
+            />
+          }
+          name="Number of devices healthy"
+          value="99"
+        />
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w="56px"
+              h="56px"
+              bg={boxBg}
+              icon={
+                <Icon
+                  w="32px"
+                  h="32px"
+                  as={MdOutlineHealthAndSafety}
+                  color={brandColor}
+                />
+              }
+            />
+          }
+          name="Average panel health"
+          value="68%"
+        />
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
-      <Card p='0px'>
-            <Flex
-              align={{ sm: "flex-start", lg: "center" }}
-              justify='space-between'
-              w='100%'
-              px='22px'
-              py='18px'>
-              <Text color={textColor} fontSize='xl' fontWeight='600'>
-                Notifications
-              </Text>
-              <Button variant='action'>See all</Button>
-            </Flex>
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gap="20px" mb="20px">
+        <Card p="0px">
+          <Flex
+            align={{ sm: "flex-start", lg: "center" }}
+            justify="space-between"
+            w="100%"
+            px="22px"
+            py="18px"
+          >
+            <Text color={textColor} fontSize="xl" fontWeight="600">
+              Notifications
+            </Text>
+            <Button variant="action">See all</Button>
+          </Flex>
 
-            <HistoryItem
-              name='Colorful Heaven'
-              author='By Mark Benjamin'
-              date='30s ago'
-              image={Nft5}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Abstract Colors'
-              author='By Esthera Jackson'
-              date='58s ago'
-              image={Nft1}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='ETH AI Brain'
-              author='By Nick Wilson'
-              date='1m ago'
-              image={Nft2}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Swipe Circles'
-              author='By Peter Will'
-              date='1m ago'
-              image={Nft4}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Mesh Gradients '
-              author='By Will Smith'
-              date='2m ago'
-              image={Nft3}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='3D Cubes Art'
-              author='By Manny Gates'
-              date='3m ago'
-              image={Nft6}
-              price='0.91 ETH'
-            />
-          </Card>
+          <Notification
+            name="General check"
+            color={brandColor}
+            message="Book for general service."
+            date="5m ago"
+            image={MdOutlineHealthAndSafety}
+          />
+          <Notification
+            color={textColor}
+            name="Device near failure"
+            message="Device 2, Zone 1, Panel 3 needs to be replaced"
+            date="3d ago"
+            image={MdOutlineHealthAndSafety}
+          />
+          <Notification
+            name="Maintenance"
+            message="Maintenance completed"
+            date="2w ago"
+            image={MdOutlineHealthAndSafety}
+          />
+        </Card>
+        <AveragePanel />
+        <PanelPieCard />
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
-        <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
-          <DailyTraffic />
-          <PieCard />
-        </SimpleGrid>
-      </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
-        <ComplexTable
+      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap="20px" mb="20px">
+        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px">
+            <Checklist />
+            <MiniCalendar h="100%" minW="100%" selectRange={false} />
+          </SimpleGrid>
+        <Orders
           columnsData={columnsDataComplex}
           tableData={tableDataComplex}
         />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
-          <Tasks />
-          <MiniCalendar h='100%' minW='100%' selectRange={false} />
-        </SimpleGrid>
       </SimpleGrid>
     </Box>
   );
