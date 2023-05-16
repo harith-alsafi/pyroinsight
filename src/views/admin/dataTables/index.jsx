@@ -1,10 +1,12 @@
 // Chakra imports
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid } from "@chakra-ui/react";
 import DevelopmentTable from "views/admin/dataTables/components/DevelopmentTable";
+import AllDevices from "views/admin/dataTables/components/AllDevices";
 import CheckTable from "views/admin/dataTables/components/CheckTable";
 import ColumnsTable from "views/admin/dataTables/components/ColumnsTable";
 import ComplexTable from "views/admin/dataTables/components/ComplexTable";
 import {
+  columnsAllDevice,
   columnsDataDevelopment,
   columnsDataCheck,
   columnsDataColumns,
@@ -14,6 +16,7 @@ import tableDataDevelopment from "views/admin/dataTables/variables/tableDataDeve
 import tableDataCheck from "views/admin/dataTables/variables/tableDataCheck.json";
 import tableDataColumns from "views/admin/dataTables/variables/tableDataColumns.json";
 import tableDataComplex from "views/admin/dataTables/variables/tableDataComplex.json";
+import tableAllDevice from "views/admin/dataTables/variables/AllDevicesComplex.json";
 import React from "react";
 
 export default function Settings() {
@@ -24,9 +27,12 @@ export default function Settings() {
         mb='20px'
         columns={{ sm: 1, md: 2 }}
         spacing={{ base: "20px", xl: "20px" }}>
-        <DevelopmentTable
-          columnsData={columnsDataDevelopment}
-          tableData={tableDataDevelopment}
+          <Flex>
+            
+          </Flex>
+        <AllDevices
+          columnsData={columnsAllDevice}
+          tableData={tableAllDevice}
         />
         <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
         <ColumnsTable

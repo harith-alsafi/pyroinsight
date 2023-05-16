@@ -13,7 +13,7 @@ import {
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
-import DataTables from "views/admin/dataTables";
+import dataTables from "views/admin/dataTables";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
@@ -27,11 +27,11 @@ const routes = [
     component: MainDashboard,
   },
   {
-    name: "Data Tables",
+    name: "Device Dashboard",
     layout: "/admin",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/data-tables",
-    component: DataTables,
+    component: dataTables,
   },
   {
     name: "NFT Marketplace",

@@ -17,6 +17,25 @@ export const columnsDataDevelopment = [
   },
 ];
 
+export const columnsAllDevice = [
+  {
+    Header: "DEVICE",
+    accessor: "device",
+  },
+  {
+    Header: "TECH",
+    accessor: "tech",
+  },
+  {
+    Header: "DATE",
+    accessor: "date",
+  },
+  {
+    Header: "PROGRESS",
+    accessor: "progress",
+  },
+];
+
 export const columnsDataCheck = [
   {
     Header: "NAME",
