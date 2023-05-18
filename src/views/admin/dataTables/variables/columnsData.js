@@ -23,16 +23,27 @@ export const columnsAllDevice = [
     accessor: "device",
   },
   {
-    Header: "TECH",
-    accessor: "tech",
+    Header: "CHANNEL ADDRESS",
+    accessor: "channelAddress",
   },
   {
-    Header: "DATE",
-    accessor: "date",
+    Header: "POINT NUMBER",
+    accessor: "pointNumber",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "HEALTH",
+    accessor: "health",
+  },
+];
+
+export const columnsDeviceProperties = [
+  {
+    Header: "TYPE",
+    accessor: "type",
+  },
+  {
+    Header: "VALUE",
+    accessor: "value",
   },
 ];
 

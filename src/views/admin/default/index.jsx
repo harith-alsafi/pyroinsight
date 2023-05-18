@@ -1,27 +1,20 @@
 // Chakra imports
 import {
-  Avatar,
   Box,
   Button,
   Flex,
-  FormLabel,
   Icon,
-  Select,
   SimpleGrid,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-// Assets
-import Usa from "assets/img/dashboards/usa.png";
 // Custom components
 import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
 import React from "react";
 import {
-  MdAddTask,
   MdOutlineHealing,
-  MdBarChart,
   MdDataset,
   MdDoDisturbOn,
   MdDoDisturbOff,
@@ -29,33 +22,19 @@ import {
   MdOutlineHealthAndSafety,
 } from "react-icons/md";
 
-import Nft1 from "assets/img/nfts/Nft1.png";
-import Nft2 from "assets/img/nfts/Nft2.png";
-import Nft3 from "assets/img/nfts/Nft3.png";
-import Nft4 from "assets/img/nfts/Nft4.png";
-import Nft5 from "assets/img/nfts/Nft5.png";
-import Nft6 from "assets/img/nfts/Nft6.png";
-import CheckTable from "views/admin/default/components/CheckTable";
-import ComplexTable from "views/admin/default/components/ComplexTable";
 import Orders from "views/admin/default/components/Orders";
-import DailyTraffic from "views/admin/default/components/DailyTraffic";
 import AveragePanel from "views/admin/default/components/AveragePanel";
 import Checklist from "views/admin/default/components/Checklist";
-import PieCard from "views/admin/default/components/PieCard";
 import PanelPieCard from "views/admin/default/components/PanelPieCard";
 import Panel1 from "views/admin/default/components/Panel1";
 import Panel2 from "views/admin/default/components/Panel2";
-import HistoryItem from "views/admin/marketplace/components/HistoryItem";
 import Notification from "views/admin/default/components/NotificationsCard";
 import WeeklyUpdate1 from "views/admin/default/components/WeeklyUpdate1";
 import WeeklyUpdate2 from "views/admin/default/components/WeeklyUpdate2";
-import NFT from "components/card/NFT";
 import Card from "components/card/Card.js";
 import {
-  columnsDataCheck,
   columnsDataComplex,
 } from "views/admin/default/variables/columnsData";
-import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
 import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 
 export default function UserReports() {
@@ -72,7 +51,7 @@ export default function UserReports() {
         <WeeklyUpdate2 />
       </SimpleGrid>
       <SimpleGrid
-        columns={{ base: 1, md: 2, lg: 3, "2xl": 4 }}
+        columns={{ base: 1, md: 3, lg: 3 }}
         gap="20px"
         mb="20px"
       >

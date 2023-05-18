@@ -37,7 +37,7 @@ export default function Upload(props) {
                 </Text>
               </Flex>
               <Text fontSize='sm' fontWeight='500' color='secondaryGray.500'>
-                PNG, JPG and GIF files are allowed
+                CSV and TXT files are allowed
               </Text>
             </Box>
           }
@@ -49,7 +49,7 @@ export default function Upload(props) {
             textAlign='start'
             fontSize='2xl'
             mt={{ base: "20px", "2xl": "50px" }}>
-            Complete your profile
+            Add a local file
           </Text>
           <Text
             color={textColorSecondary}
@@ -57,8 +57,7 @@ export default function Upload(props) {
             my={{ base: "auto", "2xl": "10px" }}
             mx='auto'
             textAlign='start'>
-            Stay on the pulse of distributed projects with an anline whiteboard
-            to plan, coordinate and discuss
+            Can't connect to your site remotely. No problem, you can add the file locally
           </Text>
           <Flex w='100%'>
             <Button
@@ -69,7 +68,7 @@ export default function Upload(props) {
               mt={{ base: "20px", "2xl": "auto" }}
               variant='brand'
               fontWeight='500'>
-              Publish now
+              Add now
             </Button>
           </Flex>
         </Flex>

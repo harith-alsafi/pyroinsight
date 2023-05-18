@@ -24,7 +24,7 @@ export default function Notification(props) {
       transition='0.2s linear'>
       <Flex direction={{ base: "column" }} justify='center'>
         <Flex position='relative' align='center'>
-          <Icon as={image} w='40px' h='40px' borderRadius='20px' me='16px' color={brandColor} />
+          <Icon as={image} w='40px' h='36px' borderRadius='20px' me='16px' color={brandColor} />
           <Flex
             direction='column'
             w={{ base: "70%", md: "100%" }}
@@ -32,7 +32,7 @@ export default function Notification(props) {
             <Text
               color={textColor}
               fontSize={{
-                base: "md",
+                base: "18px",
               }}
               mb='5px'
               fontWeight='bold'
@@ -42,7 +42,7 @@ export default function Notification(props) {
             <Text
               color='secondaryGray.600'
               fontSize={{
-                base: "sm",
+                base: "16px",
               }}
               fontWeight='400'
               me='14px'>

@@ -26,42 +26,41 @@ export default function GeneralInformation(props) {
         General Information
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
-        As we live, our hearts turn colder. Cause pain is what we go through as
-        we become older. We get insulted by others, lose trust for those others.
-        We get back stabbed by friends. It becomes harder for us to give others
-        a hand. We get our heart broken by people we love, even that we give
-        them all...
+        PyroInsight is a web application provides real-time data on detectors for customers and 
+        field engineers to proactively manage the system and minimize downtime. The solution 
+        eliminates the need for physical site visits, saving on commuting costs and fees, 
+        and enables quick resolution of malfunctioning detectors potentially saving lives
       </Text>
       <SimpleGrid columns='2' gap='20px'>
         <Information
           boxShadow={cardShadow}
-          title='Education'
-          value='Stanford University'
+          title='Team name'
+          value='FireWatch Data Analysts'
         />
         <Information
           boxShadow={cardShadow}
-          title='Languages'
-          value='English, Spanish, Italian'
+          title='Prototype made using'
+          value='React JS'
         />
         <Information
           boxShadow={cardShadow}
-          title='Department'
-          value='Product Design'
+          title='Software Engineer Intern'
+          value='Kumar Acharjee'
         />
         <Information
           boxShadow={cardShadow}
-          title='Work History'
-          value='Google, Facebook'
+          title='Software Engineer Intern'
+          value='Harith Al-Safi'
         />
         <Information
           boxShadow={cardShadow}
-          title='Organization'
-          value='Simmmple Web LLC'
+          title='Test Engineer'
+          value='Daniel Sikar'
         />
         <Information
           boxShadow={cardShadow}
-          title='Birthday'
-          value='20 July 1986'
+          title='SQA Engineer'
+          value='Mumtaz Mukherjee'
         />
       </SimpleGrid>
     </Card>

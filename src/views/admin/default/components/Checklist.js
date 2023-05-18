@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 // Custom components
 import Card from "components/card/Card.js";
-import Menu from "components/menu/MainMenu";
+import ClearAll from "components/menu/ClearAllMenu";
 import IconBox from "components/icons/IconBox";
 
 // Assets
@@ -37,7 +37,7 @@ export default function Checklist(props) {
         <Text color={textColor} fontSize='lg' fontWeight='700'>
           Checklist
         </Text>
-        <Menu ms='auto' />
+        <ClearAll ms='auto' />
       </Flex>
       <Box px='11px'>
         <Flex mb='20px'>

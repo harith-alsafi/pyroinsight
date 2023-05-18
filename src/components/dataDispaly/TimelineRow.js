@@ -5,6 +5,8 @@ export default function TimelineRow(props) {
 	const { logo, title, date, color, index, arrLength } = props;
 	const textColor = useColorModeValue('gray.700', 'white.300');
 	const bgIconColor = useColorModeValue('white.300', 'gray.700');
+	const textColorDate = useColorModeValue("secondaryGray.600", "white");
+	const textColor2 = useColorModeValue("secondaryGray.900", "white");
 
 	return (
 		<Flex alignItems='center' minH='78px' justifyContent='start' mb='5px'>
@@ -14,21 +16,21 @@ export default function TimelineRow(props) {
 					bg={bgIconColor}
 					color={color}
 					h={'30px'}
-					w={'26px'}
+					w={'40px'}
 					pe='6px'
 					zIndex='1'
 					position='relative'
 					right={document.documentElement.dir === 'rtl' ? '-8px' : ''}
 					left={document.documentElement.dir === 'rtl' ? '' : '-8px'}
 				/>
-				<Box w='2px' bg='gray.200' h={index === arrLength - 1 ? '15px' : '100%'} />
+				<Box w='2px' bg='gray.200' position='relative' left='8px' h={index === arrLength - 1 ? '15px' : '100%'} />
 			</Flex>
 			<Flex direction='column' justifyContent='flex-start' h='100%'>
-				<Text fontSize='sm' color={textColor} fontWeight='bold'>
+				<Text fontSize='18px' color={textColor2} fontWeight='bold'>
 					{title}
 				</Text>
-				<Text fontSize='sm' color='gray.400' fontWeight='normal'>
-					{date}
+				<Text fontSize='16px' color={textColorDate} fontWeight='normal'>
+					{date}  
 				</Text>
 			</Flex>
 		</Flex>

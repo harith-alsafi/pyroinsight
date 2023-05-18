@@ -13,8 +13,8 @@ import {
 } from "@chakra-ui/react";
 // Custom components
 import Card from "components/card/Card";
-import { AndroidLogo, AppleLogo, WindowsLogo } from "components/icons/Icons";
 import Menu from "components/menu/MainMenu";
+import { SearchBar } from '../../../../components/navbar/searchBar/SearchBar';
 import React, { useMemo } from "react";
 import {
   useGlobalFilter,
@@ -47,16 +47,19 @@ export default function DevelopmentTable(props) {
     prepareRow,
     initialState,
   } = tableInstance;
-  initialState.pageSize = 11;
+  initialState.pageSize = 190;
 
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const iconColor = useColorModeValue("secondaryGray.500", "white");
+  const borderButton = useColorModeValue('secondaryGray.500', 'whiteAlpha.200');
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.100");
   return (
     <Card
       direction='column'
+      h={{ sm: "md", md: "xl", lg: "2xl" }}
       w='100%'
       px='0px'
+      overflowY={{ sm: "scroll"}}
       overflowX={{ sm: "scroll", lg: "hidden" }}>
       <Flex px='25px' justify='space-between' mb='20px' align='center'>
         <Text
@@ -66,7 +69,8 @@ export default function DevelopmentTable(props) {
           lineHeight='100%'>
           All Devices
         </Text>
-        <Menu />
+        <SearchBar w="50%" me="10px" borderRadius="30px"  />
+        <Menu/>
       </Flex>
       <Table {...getTableProps()} variant='simple' color='gray.500' mb='24px'>
         <Thead>
@@ -103,50 +107,19 @@ export default function DevelopmentTable(props) {
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "TECH") {
+                  } else if (cell.column.Header === "CHANNEL ADDRESS") {
                     data = (
-                      <Flex align='center'>
-                        {cell.value.map((item, key) => {
-                          if (item === "apple") {
-                            return (
-                              <AppleLogo
-                                key={key}
-                                color={iconColor}
-                                me='16px'
-                                h='18px'
-                                w='15px'
-                              />
-                            );
-                          } else if (item === "android") {
-                            return (
-                              <AndroidLogo
-                                key={key}
-                                color={iconColor}
-                                me='16px'
-                                h='18px'
-                                w='16px'
-                              />
-                            );
-                          } else if (item === "windows") {
-                            return (
-                              <WindowsLogo
-                                key={key}
-                                color={iconColor}
-                                h='18px'
-                                w='19px'
-                              />
-                            );
-                          }
-                        })}
-                      </Flex>
+                      <Text color={textColor} fontSize='sm' fontWeight='700' >
+                        {cell.value}
+                      </Text>
                     );
-                  } else if (cell.column.Header === "DATE") {
+                  } else if (cell.column.Header === "POINT NUMBER") {
                     data = (
                       <Text color={textColor} fontSize='sm' fontWeight='700'>
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "PROGRESS") {
+                  } else if (cell.column.Header === "HEALTH") {
                     data = (
                       <Flex align='center'>
                         <Text

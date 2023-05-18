@@ -10,7 +10,7 @@ export default function Notifications(props) {
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue("secondaryGray.900", "white");
   return (
-    <Card mb="20px" mt="40px" mx="auto" maxW="410px" {...rest}>
+    <Card mb={{ base: "0px", "2xl": "20px" }}>
       <Flex align="center" w="100%" justify="space-between" mb="30px">
         <Text
           color={textColorPrimary}
@@ -28,14 +28,14 @@ export default function Notifications(props) {
         fontSize="sm"
         mb="20px"
         id="1"
-        label="Item update notifications"
+        label="Email me if any device is faulty"
       />
       <SwitchField
         reversed={true}
         fontSize="sm"
         mb="20px"
         id="2"
-        label="Item comment notifications"
+        label="Email me if any device is disabled"
       />
       <SwitchField
         isChecked={true}
@@ -43,7 +43,7 @@ export default function Notifications(props) {
         fontSize="sm"
         mb="20px"
         id="3"
-        label="Buyer review notifications"
+        label="Text me if any device is faulty"
       />
       <SwitchField
         isChecked={true}
@@ -51,21 +51,21 @@ export default function Notifications(props) {
         fontSize="sm"
         mb="20px"
         id="4"
-        label="Rating reminders notifications"
+        label="Email me hourly updates"
       />
       <SwitchField
         reversed={true}
         fontSize="sm"
         mb="20px"
         id="5"
-        label="Meetups near you notifications"
+        label="Text me hourly updates"
       />
       <SwitchField
         reversed={true}
         fontSize="sm"
         mb="20px"
         id="6"
-        label="Company news notifications"
+        label="Email me daily updates"
       />
       <SwitchField
         isChecked={true}
@@ -73,14 +73,14 @@ export default function Notifications(props) {
         fontSize="sm"
         mb="20px"
         id="7"
-        label="New launches and projects"
+        label="Text me daily updates"
       />
       <SwitchField
         reversed={true}
         fontSize="sm"
         mb="20px"
         id="8"
-        label="Monthly product changes"
+        label="Email me weekly updates"
       />
       <SwitchField
         isChecked={true}
@@ -88,13 +88,7 @@ export default function Notifications(props) {
         fontSize="sm"
         mb="20px"
         id="9"
-        label="Subscribe to newsletter"
-      />
-      <SwitchField
-        reversed={true}
-        fontSize="sm"
-        id="10"
-        label="Email me when someone follows me"
+        label="Text me weekly updates"
       />
     </Card>
   );

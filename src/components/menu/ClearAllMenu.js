@@ -15,10 +15,11 @@ import {
 // Assets
 import {
   MdOutlineMoreHoriz,
-  MdOutlineSettings,
+  MdRefresh,
+  MdClearAll,
 } from "react-icons/md";
 
-export default function Banner(props) {
+export default function ClearAll(props) {
   const { ...rest } = props;
 
   const textColor = useColorModeValue("secondaryGray.500", "white");
@@ -90,9 +91,9 @@ export default function Banner(props) {
           }}
           mb='10px'>
           <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
+            <Icon as={MdClearAll} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              Panel 1
+              Clear All
             </Text>
           </Flex>
         </MenuItem>
@@ -110,9 +111,9 @@ export default function Banner(props) {
           }}
           mb='10px'>
           <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
+            <Icon as={MdRefresh} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              Panel 2
+              Refresh
             </Text>
           </Flex>
         </MenuItem>

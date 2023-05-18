@@ -25,34 +25,36 @@ export default function Projects(props) {
         fontSize='2xl'
         mt='10px'
         mb='4px'>
-        All projects
+        All Sites
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
-        Here you can find more details about your projects. Keep you user
-        engaged by providing meaningful information.
+        Here you can find more details about your sites.
       </Text>
       <Project
         boxShadow={cardShadow}
         mb='20px'
         image={Project1}
-        ranking='1'
+        ranking='Site #1 • '
         link='#'
-        title='Technology behind the Blockchain'
+        details="Click here to see more details"
+        title='Site 1 - Location X'
       />
       <Project
         boxShadow={cardShadow}
         mb='20px'
         image={Project2}
-        ranking='2'
+        ranking='Site #2 • '
         link='#'
-        title='Greatest way to a good Economy'
+        details="Click here to see more details"
+        title='Site 2 - Location Y'
       />
       <Project
         boxShadow={cardShadow}
         image={Project3}
-        ranking='3'
+        ranking=''
         link='#'
-        title='Most essential tips for Burnout'
+        details="Click here to add new site"
+        title='Add Site'
       />
     </Card>
   );

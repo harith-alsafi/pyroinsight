@@ -15,6 +15,9 @@ import {
 // Assets
 import {
   MdOutlineMoreHoriz,
+  MdOutlinePerson,
+  MdOutlineCardTravel,
+  MdStorage,
   MdOutlineSettings,
 } from "react-icons/md";
 
@@ -52,54 +55,75 @@ export default function Banner(props) {
   return (
     <Menu isOpen={isOpen1} onClose={onClose1}>
       <MenuButton
-        align='center'
-        justifyContent='center'
+        align="center"
+        justifyContent="center"
         bg={bgButton}
         _hover={bgHover}
         _focus={bgFocus}
         _active={bgFocus}
-        w='37px'
-        h='37px'
-        lineHeight='100%'
+        w="37px"
+        h="37px"
+        lineHeight="100%"
         onClick={onOpen1}
-        borderRadius='10px'
-        {...rest}>
-        <Icon as={MdOutlineMoreHoriz} color={iconColor} w='24px' h='24px' />
+        borderRadius="10px"
+        {...rest}
+      >
+        <Flex align="center">
+          <Icon
+            as={MdStorage}
+            color={iconColor}
+            w="24px"
+            h="24px"
+            me="10px"
+            ml="10px"
+          />
+          <Text
+            me="auto"
+            color={textColor}
+            fontSize="md"
+            fontWeight="400"
+            lineHeight="100%"
+          >
+            Select Site
+          </Text>
+        </Flex>
       </MenuButton>
       <MenuList
-        w='150px'
-        minW='unset'
-        maxW='150px !important'
-        border='transparent'
-        backdropFilter='blur(63px)'
+        w="150px"
+        minW="unset"
+        maxW="150px !important"
+        border="transparent"
+        backdropFilter="blur(63px)"
         bg={bgList}
         boxShadow={bgShadow}
-        borderRadius='20px'
-        p='15px'>
+        borderRadius="20px"
+        p="15px"
+      >
         <MenuItem
-          transition='0.2s linear'
+          transition="0.2s linear"
           color={textColor}
           _hover={textHover}
-          p='0px'
-          borderRadius='8px'
+          p="0px"
+          borderRadius="8px"
           _active={{
             bg: "transparent",
           }}
           _focus={{
             bg: "transparent",
           }}
-          mb='10px'>
-          <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
-            <Text fontSize='sm' fontWeight='400'>
-              Panel 1
+          mb="10px"
+        >
+          <Flex align="center">
+            <Icon as={MdStorage} h="16px" w="16px" me="8px" />
+            <Text fontSize="md" fontWeight="400">
+              Site 1
             </Text>
           </Flex>
         </MenuItem>
         <MenuItem
-          transition='0.2s linear'
-          p='0px'
-          borderRadius='8px'
+          transition="0.2s linear"
+          p="0px"
+          borderRadius="8px"
           color={textColor}
           _hover={textHover}
           _active={{
@@ -108,11 +132,33 @@ export default function Banner(props) {
           _focus={{
             bg: "transparent",
           }}
-          mb='10px'>
-          <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
-            <Text fontSize='sm' fontWeight='400'>
-              Panel 2
+          mb="10px"
+        >
+          <Flex align="center">
+            <Icon as={MdStorage} h="16px" w="16px" me="8px" />
+            <Text fontSize="md" fontWeight="400">
+              Site 2
+            </Text>
+          </Flex>
+        </MenuItem>
+        <MenuItem
+          transition="0.2s linear"
+          p="0px"
+          borderRadius="8px"
+          color={textColor}
+          _hover={textHover}
+          _active={{
+            bg: "transparent",
+          }}
+          _focus={{
+            bg: "transparent",
+          }}
+          mb="10px"
+        >
+          <Flex align="center">
+            <Icon as={MdStorage} h="16px" w="16px" me="8px" />
+            <Text fontSize="md" fontWeight="400">
+              Custom
             </Text>
           </Flex>
         </MenuItem>

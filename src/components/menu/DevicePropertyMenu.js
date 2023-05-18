@@ -15,10 +15,10 @@ import {
 // Assets
 import {
   MdOutlineMoreHoriz,
-  MdOutlineSettings,
+  MdDownloadForOffline,
 } from "react-icons/md";
 
-export default function Banner(props) {
+export default function DevicePropertyMenu(props) {
   const { ...rest } = props;
 
   const textColor = useColorModeValue("secondaryGray.500", "white");
@@ -90,18 +90,18 @@ export default function Banner(props) {
           }}
           mb='10px'>
           <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
+            <Icon as={MdDownloadForOffline} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              Panel 1
+              Download CSV
             </Text>
           </Flex>
         </MenuItem>
         <MenuItem
           transition='0.2s linear'
-          p='0px'
-          borderRadius='8px'
           color={textColor}
           _hover={textHover}
+          p='0px'
+          borderRadius='8px'
           _active={{
             bg: "transparent",
           }}
@@ -110,9 +110,9 @@ export default function Banner(props) {
           }}
           mb='10px'>
           <Flex align='center'>
-            <Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
+            <Icon as={MdDownloadForOffline} h='16px' w='16px' me='8px' />
             <Text fontSize='sm' fontWeight='400'>
-              Panel 2
+              Download CSV for all devices
             </Text>
           </Flex>
         </MenuItem>
