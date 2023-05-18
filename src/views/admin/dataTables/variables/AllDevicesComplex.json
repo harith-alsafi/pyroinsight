@@ -1,0 +1,211 @@
+[
+  {
+    "device": "801 CH",
+    "channelAddress": "1",
+    "pointNumber": "1",
+    "health": 96.8
+  },
+
+  {
+    "device": "835 P",
+    "channelAddress": "1",
+    "pointNumber": "2",
+    "health": 92.3
+  },
+
+  {
+    "device": "850 P",
+    "channelAddress": "1",
+    "pointNumber": "3",
+    "health": 97.6
+  },
+
+  {
+    "device": "855 PH",
+    "channelAddress": "1",
+    "pointNumber": "4",
+    "health": 94.5
+  },
+
+  {
+    "device": "P80AVB",
+    "channelAddress": "1",
+    "pointNumber": "5",
+    "health": 92.1
+  },
+
+  {
+    "device": "P80SB",
+    "channelAddress": "1",
+    "pointNumber": "6",
+    "health": 93.9
+  },
+
+  {
+    "device": "801 CH",
+    "channelAddress": "1",
+    "pointNumber": "7",
+    "health": 96.2
+  },
+
+  {
+    "device": "835 P",
+    "channelAddress": "1",
+    "pointNumber": "8",
+    "health": 91.8
+  },
+
+  {
+    "device": "850 P",
+    "channelAddress": "1",
+    "pointNumber": "9",
+    "health": 91.5
+  },
+
+  {
+    "device": "855 PH",
+    "channelAddress": "1",
+    "pointNumber": "10",
+    "health": 96.3
+  },
+
+  {
+    "device": "P80AVB",
+    "channelAddress": "1",
+    "pointNumber": "11",
+    "health": 91.7
+  },
+
+  {
+    "device": "P80SB",
+    "channelAddress": "1",
+    "pointNumber": "12",
+    "health": 96.9
+  },
+
+  {
+    "device": "801 CH",
+    "channelAddress": "1",
+    "pointNumber": "13",
+    "health": 96.4
+  },
+
+  {
+    "device": "835 P",
+    "channelAddress": "1",
+    "pointNumber": "14",
+    "health": 93.2
+  },
+
+  {
+    "device": "850 P",
+    "channelAddress": "1",
+    "pointNumber": "15",
+    "health": 95.8
+  },
+
+  {
+    "device": "801 CH",
+    "channelAddress": "2",
+    "pointNumber": "1",
+    "health": 91.6
+    },
+    
+    {
+    "device": "835 P",
+    "channelAddress": "2",
+    "pointNumber": "2",
+    "health": 97.2
+    },
+    
+    {
+    "device": "850 P",
+    "channelAddress": "2",
+    "pointNumber": "3",
+    "health": 91.7
+    },
+    
+    {
+    "device": "855 PH",
+    "channelAddress": "2",
+    "pointNumber": "4",
+    "health": 94.3
+    },
+    
+    {
+    "device": "P80AVB",
+    "channelAddress": "2",
+    "pointNumber": "5",
+    "health": 90.1
+    },
+    
+    {
+    "device": "P80SB",
+    "channelAddress": "2",
+    "pointNumber": "6",
+    "health": 96.8
+    },
+    
+    {
+    "device": "801 CH",
+    "channelAddress": "2",
+    "pointNumber": "7",
+    "health": 94.9
+    },
+    
+    {
+    "device": "835 P",
+    "channelAddress": "2",
+    "pointNumber": "8",
+    "health": 96.5
+    },
+    
+    {
+    "device": "850 P",
+    "channelAddress": "2",
+    "pointNumber": "9",
+    "health": 92.3
+    },
+    
+    {
+    "device": "855 PH",
+    "channelAddress": "2",
+    "pointNumber": "10",
+    "health": 92.4
+    },
+    
+    {
+    "device": "P80AVB",
+    "channelAddress": "2",
+    "pointNumber": "11",
+    "health": 91.2
+    },
+    
+    {
+    "device": "P80SB",
+    "channelAddress": "2",
+    "pointNumber": "12",
+    "health": 93.9
+    },
+    
+    {
+    "device": "801 CH",
+    "channelAddress": "2",
+    "pointNumber": "13",
+    "health": 91.7
+    },
+    
+    {
+    "device": "835 P",
+    "channelAddress": "2",
+    "pointNumber": "14",
+    "health": 95.2
+    },
+    
+    {
+    "device": "850 P",
+    "channelAddress": "2",
+    "pointNumber": "15",
+    "health": 97.8
+    }
+]

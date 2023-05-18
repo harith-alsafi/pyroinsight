@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Name",
+    "value": "801 CH"
+  },
+  {
+    "type": "Serial Number",
+    "value": "11231551"
+  },
+  {
+    "type": "Manufacture Date",
+    "value": "03/01/2023"
+  },
+  {
+    "type": "Sensor Type",
+    "value": "CO and H"
+  },
+  {
+    "type": "Supported Algos",
+    "value": "UL-E7, UL-E6"
+  },
+  {
+    "type": "Channel Address",
+    "value": "1"
+  },
+  {
+    "type": "Point Address",
+    "value": "7"
+  },
+  {
+    "type": "Health",
+    "value": "86.2%"
+  },
+  {
+    "type": "Schedule Check",
+    "value": "02/01/2024"
+  },
+  {
+    "type": "Zone",
+    "value": "2"
+  }
+]
